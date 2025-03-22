@@ -1,14 +1,7 @@
-### Homework 18 ###
+### Homework 19 ###
 
-let numOrStr = prompt('input number or string');
-console.log(numOrStr)
+Вам потрібно запросити у користувача число. Додати умову при якому число виводитиметься (через alert) з правильним словом: «рік», «року» або «років». Тобто. "29 років" або "4 роки".
 
-if(numOrStr === null) {
-console.log('ви скасували')
-} else if( numOrStr.trim() === '' ) {
-console.log('Empty String');
-} else if ( isNaN( +numOrStr ) ) {
-console.log(' number is Ba_NaN')
-} else {
-console.log('OK!')
-}
+Обмежень за віком - немає, 0 теж підходить
+
+Також зробіть просту перевірку, що користувач ввів число
