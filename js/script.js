@@ -5,26 +5,25 @@ let y = 7;
 
 const compare = x > y ? 'x більше за y' : 'x не більше, ніж y';
 
-
 //2
 
-// let userInput = prompt('Enter integer number');
-//
-// if(isNaN(userInput) || userInput.trim() === '') {
-//     alert('Please enter a valid integer number');
-// } else {
-//     userInput = Number(userInput);
-//     let userInputAbs = Math.abs(userInput);
-//     let userInputLength = userInputAbs.toString().length;
-//
-//     if (userInput > 0) {
-//         alert(`Число ${userInput} позитивне та має ${userInputLength} знаків`);
-//     } else if (userInput < 0) {
-//         alert(`Число ${userInput} негативне та має ${userInputLength} знаків`);
-//     } else {
-//         alert('Ви ввели 0, яке є нейтральним числом');
-//     }
-// }
+let userInput = prompt('Enter integer number');
+
+if(isNaN(userInput) || userInput.trim() === '') {
+    alert('Please enter a valid integer number');
+} else {
+    userInput = Number(userInput);
+    let userInputAbs = Math.abs(userInput);
+    let userInputLength = userInputAbs.toString().length;
+
+    if (userInput > 0) {
+        alert(`Число ${userInput} позитивне та має ${userInputLength} знаків`);
+    } else if (userInput < 0) {
+        alert(`Число ${userInput} негативне та має ${userInputLength} знаків`);
+    } else {
+        alert('Ви ввели 0, яке є нейтральним числом');
+    }
+}
 
 //3
 
@@ -46,4 +45,20 @@ if(isNaN(firstNumber) || isNaN(secondNumber) || isNaN(thirdNumber)) {
     alert('Найбільше число: ' + thirdNumber);
 } else {
     alert('Декілька чисел рівні між собою');
+}
+
+//4
+
+const userInputA = +prompt('введите довжина для сторона "а" трикутника');
+const userInputB = +prompt('введите довжина для сторона "b" трикутника');
+const userInputC = +prompt('введите довжина для сторона "c" трикутника');
+
+const a = Number(userInputA);
+const b = Number(userInputB);
+const c = Number(userInputC);
+
+if ((a+b) > c || (c+b) > a || (a+c) > b) {
+    alert('з такими довжинами тиркунтик може існувати')
+} else {
+    alert('з такими довжинами тиркунтик НЕ може існувати')
 }
