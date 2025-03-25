@@ -10,7 +10,7 @@ const padString = function (str, number = 1, symbol ='*', add = true) {
     if(typeof symbol !== 'string' || symbol.length !== 1) return  'помилка, не введено символ';
     if(typeof add !== 'boolean') return  'помилка, не введено додавати символи зліва чи справа';
 
-    let padding = symbol.repeat(number - str.length);
+    const padding = symbol.repeat(number - str.length);
     return add ? str + padding : padding + str;
 }
 
