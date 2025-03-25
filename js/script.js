@@ -2,21 +2,10 @@
 
 const padString = function (str, number = 1, symbol ='*', add = true) {
 
-    if(typeof str !== 'string' || str.length === 0) {
-        return  'помилка, не введено рядок';
-    }
-
-    if(typeof number !== 'number' || isNaN(number)) {
-        return  'помилка, не введено число';
-    }
-
-    if(typeof symbol !== 'string' || symbol.length !== 1) {
-        return  'помилка, не введено символ';
-    }
-
-    if(typeof add !== 'boolean') {
-        return  'помилка, не введено додавати символи зліва чи справа';
-    } else
+    if(typeof str !== 'string' || str.length === 0) return  'помилка, не введено рядок';
+    if(typeof number !== 'number' || isNaN(number)) return  'помилка, не введено число';
+    if(typeof symbol !== 'string' || symbol.length !== 1) return  'помилка, не введено символ';
+    if(typeof add !== 'boolean') return  'помилка, не введено додавати символи зліва чи справа';
 
     if(number < str.length) {
         return str.substring(0, number);
