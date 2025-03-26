@@ -2,7 +2,6 @@
 //1
 const arr =  [1, 2, 3];
 const arr1 = [4, 5, 6];
-
 const arraysJoin = arr.concat(arr1)
 // console.log(arraysJoin);
 
@@ -32,13 +31,57 @@ const arr6 = ['js', 'css', 'jq'];
 //7
 const arr7 = [1, 2, 3, 4, 5];
 const arr7New = arr7.slice(0, 3);
-
 // console.log(arr7);
 // console.log(arr7New);
 
 //8
 const arr8 = [1, 2, 3, 4, 5];
 const arr8New = arr7.slice(- 2);
-
 // console.log(arr8);
 // console.log(arr8New);
+
+//9
+const arr9 = [1, 2, 3, 4, 5];
+arr9.splice(1, 2);
+// console.log(arr9);
+
+//10
+const arr10 = [1, 2, 3, 4, 5];
+const arr10New = arr10.splice(1, 3);
+// console.log(arr10New);
+
+//11
+const arr11 = [1, 2, 3, 4, 5];
+arr11.splice(3,0, 'a', 'b', 'c');
+// console.log(arr11);
+
+//12
+const arr12 = [1, 2, 3, 4, 5];
+//[1, 'a', 'b', 2, 3, 4, 'c', 5, 'e']
+arr12.splice(1, 0, 'a', 'b');
+arr12.splice(6, 0, 'c');
+arr12.push('e');
+// console.log(arr12);
+
+//13
+const arr13 = [3, 4, 1, 2, 7];
+arr13.sort();
+// console.log(arr13);
+
+//14
+const arr14 = [5, 6, 7, 8, 9];
+let sum= 0;
+arr14.forEach(function (item) {
+    sum += item;
+});
+// console.log(sum);
+
+//15
+const arr15 = [5, 6, 7, 8, 9];
+let arr15square = [];
+arr15.forEach(function (item) {
+    arr15square.push(item ** 2);
+})
+// console.log(arr15square);
+
+//16
