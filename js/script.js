@@ -71,17 +71,36 @@ arr13.sort();
 //14
 const arr14 = [5, 6, 7, 8, 9];
 let sum= 0;
-arr14.forEach(function (item) {
-    sum += item;
-});
+arr14.forEach(item => sum += item)
 // console.log(sum);
 
 //15
 const arr15 = [5, 6, 7, 8, 9];
-let arr15square = [];
-arr15.forEach(function (item) {
-    arr15square.push(item ** 2);
-})
+const arr15square = [];
+arr15.forEach(item => arr15square.push(item ** 2))
 // console.log(arr15square);
 
 //16
+const arr16 = [1,-3, 5, 6,-7, 8, 9,-11];
+const arr16New = arr16.filter(item => item < 0);
+// console.log(arr16New);
+
+//17
+const arr17 = [1,-3, 5, 6,-7, 8, 9,-11];
+const evenNumbers = arr17.filter(item => item % 2 === 0);
+// console.log(evenNumbers);
+
+//18
+const arr18 = ['aaa', 'aaaqqq', 'zzzqq', 'zz', 'qsaa', 'q', 'az'];
+const length5 = arr18.filter(item => item.length >= 5);
+// console.log(length5);
+
+//19
+const arr19 = [1, 2, [3, 4], 5, [6, 7]];
+const subArr19 = arr19.filter(item => Array.isArray(item));
+// console.log(subArr19);
+
+//20
+const arr20 = [5,-3, 6,-5, 0,-7, 8, 9];
+const arr20New = arr20.filter(item => item < 0);
+console.log(arr20New.length);
