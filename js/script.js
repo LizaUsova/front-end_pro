@@ -112,3 +112,18 @@ const arr6Every = every(arr6, (elem) => elem > 10) ;
 const arr6EveryEmpty = every(emptyArr, (elem) => elem > 10) ;
 console.log(arr6Every);
 console.log(arr6EveryEmpty);
+
+//7
+const some = function (arr, callback) {
+    for (let i = 0; i < arr.length; i++) {
+        if(callback(arr[i])) {
+            return true;
+        }
+    }
+    return false;
+}
+
+const arr7Every = some(arr6, (elem) => elem > 10) ;
+const arr7EveryEmpty = some(emptyArr, (elem) => elem > 10) ;
+console.log(arr7Every);
+console.log(arr7EveryEmpty);
