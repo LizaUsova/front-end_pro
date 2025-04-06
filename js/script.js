@@ -36,3 +36,21 @@ const myALast = lastIndexOf(a, 3);
 const myBLast = lastIndexOf(b, 'hi');
 console.log(myALast);
 console.log(myBLast);
+
+//3
+const find = function (arr, elem) {
+    let res = undefined;
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] === elem) {
+            return arr[i]
+        }
+    }
+
+    return res
+}
+
+const myAFind = find(a, 10);
+const myBFind = find(b, 'hello');
+
+console.log(myAFind);
+console.log(myBFind);
