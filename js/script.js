@@ -76,3 +76,20 @@ const findIndex = function (arr, callback) {
 
 const usersFind = findIndex(users, user => (user.age <= 18));
 console.log(usersFind);
+
+//5
+const pets = ["cat", "dog", "bat"];
+
+const includes = function (arr, elem) {
+    let res = false;
+    for(let i = 0; i < arr.length; i++) {
+        if(arr[i] === elem) {
+            return true;
+        }
+    }
+
+    return res;
+}
+
+const petsIncludes = includes(pets, 'dog');
+console.log(petsIncludes);
