@@ -54,3 +54,25 @@ const myBFind = find(b, 'hello');
 
 console.log(myAFind);
 console.log(myBFind);
+
+//4
+const users = [
+    { name: 'Anna', age: 25 },
+    { name: 'Bob', age: 30 },
+    { name: 'Bob', age: 12 },
+    { name: 'Bob', age: 18 }
+];
+
+const findIndex = function (arr, callback) {
+    let res = -1;
+    for(let i = 0; i < arr.length; i++) {
+        if(callback(arr[i])) {
+            return i
+        }
+    }
+
+    return res
+}
+
+const usersFind = findIndex(users, user => (user.age <= 18));
+console.log(usersFind);
