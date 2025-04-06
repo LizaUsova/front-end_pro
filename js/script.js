@@ -93,3 +93,22 @@ const includes = function (arr, elem) {
 
 const petsIncludes = includes(pets, 'dog');
 console.log(petsIncludes);
+
+//6
+const arr6 = [12, 5, 8, 130, 44];
+const emptyArr = []
+
+const every = function (arr, callback) {
+    let res = true;
+    for (let i = 0; i < arr.length; i++) {
+        if(!callback(arr[i])) {
+            return false;
+        }
+    }
+    return res;
+}
+
+const arr6Every = every(arr6, (elem) => elem > 10) ;
+const arr6EveryEmpty = every(emptyArr, (elem) => elem > 10) ;
+console.log(arr6Every);
+console.log(arr6EveryEmpty);
