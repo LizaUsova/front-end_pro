@@ -21,3 +21,14 @@ function pow(num, degree) {
 }
 
 console.log(pow(2, 6));
+
+//3
+function sum(a, b) {
+    if (b === 0) {
+        return a
+    } else {
+       return  sum( ++a, --b)
+    }
+}
+
+console.log(sum(1, 5))
