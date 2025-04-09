@@ -2,21 +2,31 @@
 const listUl = document.getElementById("ulId");
 const listElements = listUl.childNodes;
 
-const listElementsArray = []
+const listElementsArray = [];
 
 for (const elem of listElements) {
     if (elem instanceof HTMLElement) {
-        listElementsArray.push(elem)
+        listElementsArray.push(elem);
     }
 }
 
 console.log(listElementsArray);
-console.log(listElementsArray.length);
 
-const textElemArray = [];
+const ulAttr = listUl.attributes;
+const ulAttrNames = [];
 
-for(const elem of listElementsArray) {
-    textElemArray.push(elem.textContent)
+for (const elem of ulAttr) {
+    ulAttrNames.push(elem.value)
 }
 
-console.log(textElemArray);
+console.log(ulAttrNames);
+
+const lastTagOfUl = listUl.lastElementChild;
+const firstTagOfUl = listUl.firstElementChild;
+
+lastTagOfUl.innerHTML = 'Привет меня зовут Лиза';
+console.log(lastTagOfUl);
+
+firstTagOfUl.setAttribute('data-my-name', 'Liza');
+
+listUl.removeAttribute('data-dog-tail');
