@@ -6,7 +6,7 @@ const listElementsArray = []
 
 for (const elem of listElements) {
     if (elem instanceof HTMLElement) {
-        listElementsArray.push(elem.textContent)
+        listElementsArray.push(elem)
     }
 }
 
