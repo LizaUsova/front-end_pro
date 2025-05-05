@@ -1,0 +1,23 @@
+{
+  "name": "front-end_pro",
+  "version": "1.0.0",
+  "description": "Переписати TodoList так як я написав на уроці з використанням MVC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LizaUsova/front-end_pro.git"
+  },
+  "author": "Yelyzaveta Usova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LizaUsova/front-end_pro/issues"
+  },
+  "homepage": "https://github.com/LizaUsova/front-end_pro#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.5",
+    "bootstrap-icons": "^1.11.3"
+  }
+}
